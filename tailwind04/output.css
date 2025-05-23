@@ -49,6 +49,8 @@
     --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
@@ -83,6 +85,12 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -243,17 +251,8 @@
   .relative {
     position: relative;
   }
-  .inset-20 {
-    inset: calc(var(--spacing) * 20);
-  }
   .inset-30 {
     inset: calc(var(--spacing) * 30);
-  }
-  .inset-35 {
-    inset: calc(var(--spacing) * 35);
-  }
-  .inset-40 {
-    inset: calc(var(--spacing) * 40);
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
@@ -282,6 +281,24 @@
   .z-20 {
     z-index: 20;
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
@@ -296,6 +313,9 @@
   }
   .mx-10 {
     margin-inline: calc(var(--spacing) * 10);
+  }
+  .mx-auto {
+    margin-inline: auto;
   }
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
@@ -331,10 +351,6 @@
   .size-1\/2 {
     width: calc(1/2 * 100%);
     height: calc(1/2 * 100%);
-  }
-  .size-12 {
-    width: calc(var(--spacing) * 12);
-    height: calc(var(--spacing) * 12);
   }
   .size-20 {
     width: calc(var(--spacing) * 20);
@@ -387,17 +403,8 @@
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
-  }
   .h-100 {
     height: calc(var(--spacing) * 100);
-  }
-  .h-fit {
-    height: fit-content;
-  }
-  .h-full {
-    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -446,6 +453,9 @@
   }
   .resize {
     resize: both;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -507,6 +517,12 @@
   }
   .bg-blue-300 {
     background-color: var(--color-blue-300);
+  }
+  .bg-blue-400 {
+    background-color: var(--color-blue-400);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
   }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
@@ -613,8 +629,14 @@
   .bg-violet-700 {
     background-color: var(--color-violet-700);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
@@ -649,9 +671,6 @@
   .text-right {
     text-align: right;
   }
-  .align-middle {
-    vertical-align: middle;
-  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -659,6 +678,18 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -718,9 +749,6 @@
   .text-fuchsia-200 {
     color: var(--color-fuchsia-200);
   }
-  .text-fuchsia-600 {
-    color: var(--color-fuchsia-600);
-  }
   .text-indigo-100 {
     color: var(--color-indigo-100);
   }
@@ -761,6 +789,11 @@
   .\[\&\>\*\]\:flex {
     &>* {
       display: flex;
+    }
+  }
+  .\[\&\>\*\]\:p-3 {
+    &>* {
+      padding: calc(var(--spacing) * 3);
     }
   }
 }
