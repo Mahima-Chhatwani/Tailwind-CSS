@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@theme{
+    --breakpoint-sm:700px;
+    --breakpoint-md:900px;
+    --breakpoint-lg:1000px;
+    --breakpoint-big:1300px;
+    --padding-10:100px;
+    --padding-1:50px;
+    --padding-c-50:50px;
+    --padding-wrapper:10px;
+    --margin-20:20px;
+    --margin-c-50:50px;
+    --height-1:100px;
+    --width-1:50px;
+    --size-100:100px;
+    --size-c-10:1000px
+}
+
+
+/* This is how we can customize our breakpoint , margin, padding, and spaces */
