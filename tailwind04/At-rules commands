@@ -1,0 +1,13 @@
+Statement at-rules end in a semicolon. There are several statement at-rules, designated by their identifiers, each with a different syntax:
+
+@charset
+An algorithm (has the syntactic form of an at-rule, but isn't a definition) that determines the fallback character set used by the style sheet (CSS Syntax).
+
+@import
+Tells the CSS engine to include an external style sheet (CSS cascading and inheritance).
+
+@layer
+Defines the order of precedence in case of multiple cascade layers (CSS cascading and inheritance). Also used as a block at-rule to define a layer's styles.
+
+@namespace
+Defines a default namespace for a style sheet or a namespace prefix that a selector only matches if the namespace and other selector components match (CSS namespaces).

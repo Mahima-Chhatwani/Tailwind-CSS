@@ -301,6 +301,9 @@
   }
 }
 @layer utilities {
+  .\@container {
+    container-type: inline-size;
+  }
   .absolute {
     position: absolute;
   }
@@ -438,6 +441,9 @@
   }
   .ml-170 {
     margin-left: calc(var(--spacing) * 170);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
