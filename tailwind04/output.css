@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -151,6 +152,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-moonDance: "Moon Dance","cursive";
   }
 }
 @layer base {
@@ -560,9 +562,6 @@
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
-  .w-80 {
-    width: calc(var(--spacing) * 80);
-  }
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
@@ -713,9 +712,6 @@
   }
   .border-blue-800 {
     border-color: var(--color-blue-800);
-  }
-  .border-emerald-600 {
-    border-color: var(--color-emerald-600);
   }
   .border-green-600 {
     border-color: var(--color-green-600);
@@ -1142,6 +1138,9 @@
   .font-mono {
     font-family: var(--font-mono);
   }
+  .font-moonDance {
+    font-family: var(--font-moonDance);
+  }
   .font-sans {
     font-family: var(--font-sans);
   }
@@ -1430,16 +1429,6 @@
       }
     }
   }
-  .hover\:scale-110 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 110%;
-        --tw-scale-y: 110%;
-        --tw-scale-z: 110%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
   .hover\:scale-125 {
     &:hover {
       @media (hover: hover) {
@@ -1497,21 +1486,6 @@
       }
     }
   }
-  .hover\:border-4 {
-    &:hover {
-      @media (hover: hover) {
-        border-style: var(--tw-border-style);
-        border-width: 4px;
-      }
-    }
-  }
-  .hover\:border-emerald-950 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: var(--color-emerald-950);
-      }
-    }
-  }
   .hover\:bg-emerald-500 {
     &:hover {
       @media (hover: hover) {
@@ -1565,14 +1539,6 @@
     &:hover {
       @media (hover: hover) {
         opacity: 5%;
-      }
-    }
-  }
-  .hover\:brightness-125 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-brightness: brightness(125%);
-        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
       }
     }
   }
