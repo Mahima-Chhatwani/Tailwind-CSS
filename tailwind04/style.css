@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap'); */
 @import "tailwindcss";
 /* @tailwind base; */
 /* @tailwind components; */
-@tailwind utilities;
-@theme{
+/* @tailwind utilities;
+@theme{ */
     /* --breakpoint-sm:700px;
     --breakpoint-md:900px;
     --breakpoint-lg:1000px;
@@ -18,8 +18,8 @@
     --width-1:50px;
     --size-100:100px;
     --size-c-10:1000px */
-    --font-moonDance:"Moon Dance","cursive";
-}
+    /* --font-moonDance:"Moon Dance","cursive"; */
+/* } */
 /* @layer {
     h1{
          font-size: 50px;

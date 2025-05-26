@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Box in Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div class="bg-gray-500 fixed inset-0"></div>
+    <div class="fixed inset-0">
+         <div class="flex h-full justify-center items-center">
+             <div class="bg-white w-[512px] text left shadow-2xl rounded">
+                 <div class="p-5">
+                      <div class="flex items-start">
+                           <img  class="w-8" src="./warning.png">
+                      </div>
+                      <div class="ml-4">
+                        <h3 class="text-gray-900 font-semibold"> Deactivate Account</h3>
+                        <div class="m-2">
+                         <p class="text-sm text-gray-700">
+                            Are you sure you want to deactivate your Account? Allof your data will be permanently deleted. This action cannot be undone.</p>
+                        </div>
+                        
+                      </div>
+                      <div>
+                          
+                      </div>
+                      <div class="bg-gray-100  px-4 py-3 flex flex-row-reverse gap-2">
+                         <button class="bg-red-700 font-semibold shadow-sm ring-inset ring-red-300  text-white ml-3 rounded px-3 py-2 hover:bg-red-500">Deactivate</button>
+                         <button class="bg-gray-700 font-semibold shadow-sm ring-inset ring-gray-300 text-white ml-3 rounded px-3 py-2 hover:bg-gray-500">Cancel </button>
+                      </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+</body>
+</html>
