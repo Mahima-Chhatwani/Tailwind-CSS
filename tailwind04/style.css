@@ -1,4 +1,7 @@
 @import "tailwindcss";
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities;
 @theme{
     --breakpoint-sm:700px;
     --breakpoint-md:900px;
@@ -14,7 +17,96 @@
     --width-1:50px;
     --size-100:100px;
     --size-c-10:1000px
+} */
+/* @layer {
+    h1{
+         font-size: 50px;
+    }
+    h2{
+         font-size: 30px;
+    }
+    h3{
+         font-size: 20px;
+    }
+   button{
+    border: 5px solid #999;
+    padding: 3px;
+   }
+} */
+
+/* @layer base {
+    h1{
+        @apply text-9xl;
+    }
+    h2{
+        @apply text-7xl;
+    }
+    h3{
+        @apply text-4xl;
+    }
+
+    button{
+        @apply border;
+        @apply p-3;
+        @apply text-4xl;
+        background-color: bisque;
+    }
+} */
+
+
+
+/* @layer components{
+    .btn-primary{
+        @apply bg-blue-400 rounded text-white p-2 hover:bg-blue-800
+    }
+    .bg-background-blue{
+    @apply bg-blue-600 hover:bg-blue-400 p-2 m-10
 }
+} */
+
+/* @layer components{
+    .btn{
+        @apply bg-red-300 border border-red-500 rounded px-5 py-1.5 hover:bg-red-800 text-white
+
+    }
+    .btn-primary{
+        @apply bg-blue-500 hover:bg-blue-600 text-white border-blue-500 px-5 py-1.5 rounded
+
+    }
+    .btn-secondary{
+        @apply bg-slate-500 hover:bg-slate-600 text-white border-slate-500 px-5 py-1.5 rounded
+
+    }
+    .btn-success{
+        @apply bg-green-500 hover:bg-green-600 text-white border-green-500 px-5 py-1.5 rounded
+
+    }
+    .btn-danger{
+        @apply bg-red-500 hover:bg-red-600 text-white border-red-500 px-5 py-1.5 rounded
+
+    }
+    .btn-warning{
+        @apply bg-yellow-500 hover:bg-yellow-600 text-black border-yellow-500 px-5 py-1.5 rounded
+
+    }
+    .btn-info{
+        @apply bg-cyan-500 hover:bg-cyan-600 text-black border-cyan-500 px-5 py-1.5 rounded
+
+    }
+    .btn-basic{
+        @apply bg-slate-300 hover:bg-slate-400 text-black border-slate-300 px-5 py-1.5 rounded
+
+    }
+    .btn-dark{
+        @apply bg-black hover:bg-slate-700 text-white border-black px-5 py-1.5 rounded
+
+    }
+} */
 
 
-/* This is how we can customize our breakpoint , margin, padding, and spaces */
+
+@layer components{
+  .img-gallery{
+    @apply w-80 hover:scale-110 hover:brightness-125 transition duration-1000 rounded border-4 border-emerald-600 hover:border-4 hover:border-emerald-950
+  }
+}
